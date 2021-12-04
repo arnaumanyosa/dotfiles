@@ -33,6 +33,9 @@ Now that we have git installed, clone this repo to use all the scripts
 ## Oh my ZSH!
 
 Script to install Oh my ZSH!
+
+    ./install-zsh.sh
+
 ## System Tweaks
 
 Apple's default system settings are limiting and don't show a lot of information. Let's change the settings for better usability around the system. Use the script created to run all of them easily:
