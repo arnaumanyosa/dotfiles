@@ -39,7 +39,11 @@ Run a script that installs Homebrew and several formulaes (packages)
 
 Run the script that installs essential global packages
 
-  ./npm-essentials.sh
+   ./npm-essentials.sh
+   
+## Setup Mackup
+
+    //TODO
 
 ## Other interesting apps
 - Synology Drive Client
