@@ -35,7 +35,11 @@ Run a script that installs Homebrew and several formulaes (packages)
 
     ./brew-essentials.sh
 
+## NPM
 
+Run the script that installs essential global packages
+
+  ./npm-essentials.sh
 
 ## Other interesting apps
 - Synology Drive Client
