@@ -2,14 +2,16 @@
 echo "Installing Homebrew."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# In Mac devices with M1 chips, Homebrew is installed in /opt/homebrew
+# This needs to be added to PATH
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/arnau/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
-
-# Save Homebrew’s installed location.
-BREW_PREFIX=$(brew --prefix)
 
 # Installs Casks
 brew tap homebrew/cask
