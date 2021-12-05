@@ -4,6 +4,7 @@ echo "Installing Homebrew."
 
 # In Mac devices with M1 chips, Homebrew is installed in /opt/homebrew
 # This needs to be added to PATH
+# You can ignore this on Macs with Intel-based processors
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/arnau/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -22,12 +23,12 @@ brew install docker
 brew install alfred
 brew install mackup
 # brew install dropbox
-brew install google-backup-and-sync
+# brew install google-backup-and-sync
 brew install google-chrome #Chrome
 brew install google-drive
 # brew install homebrew/cask-versions/firefox-nightly # Nightly
 # brew install homebrew/cask-versions/google-chrome-canary # Chrome Canary
-brew install --cask firefox-developer-edition
+brew install --cask firefox
 brew install --cask brave-browser
 # brew install iterm2
 brew install kap
@@ -46,8 +47,7 @@ brew install --cask telegram
 brew install --cask macs-fan-control
 brew install --cask deepl
 brew install --cask dupeguru
-brew install handbrake
-brew install --cask jdownloader
+brew install --cask handbrake
 brew install --cask figma
 brew install --cask postman
 brew install --cask skype
