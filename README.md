@@ -2,16 +2,17 @@
 
 The following workflow assumes a clean installation of macOS. While it's okay to have third-party software installed, the installation process will be more streamlined and less convoluted with a new macOS.
 
-  - [System update](#system-update)
-  - [Xcode Command Line Tools](#xcode-command-line-tools)
-  - [Clone this repo](#clone-this-repo)
-  - [Oh my ZSH!](#oh-my-zsh)
-  - [System Tweaks](#system-tweaks)
-  - [Homebrew](#homebrew)
-  - [NPM](#npm)
-  - [Setup Mackup](#setup-mackup)
-  - [Other interesting apps](#other-interesting-apps)
-  - [Inspired by](#inspired-by)
+- [System update](#system-update)
+- [Xcode Command Line Tools](#xcode-command-line-tools)
+- [Rosetta](#rosetta)
+- [Clone this repo](#clone-this-repo)
+- [Oh my ZSH!](#oh-my-zsh)
+- [System Tweaks](#system-tweaks)
+- [Homebrew](#homebrew)
+- [NPM](#npm)
+- [Setup Mackup](#setup-mackup)
+- [Other interesting apps](#other-interesting-apps)
+- [Inspired by](#inspired-by)
 
 ## System update
 
@@ -23,6 +24,12 @@ Step One - Update the system!
 Using Terminal, install the Xcode Command Line Tools:
 
     xcode-select --install
+
+## Rosetta
+
+Some of the apps we will install need Rosetta to run with the M1 processor architecture
+
+    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 ## Clone this repo
 
