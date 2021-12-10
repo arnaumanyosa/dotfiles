@@ -20,7 +20,8 @@ sudo scutil --set LocalHostName "arnaus-macbook"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Arnau's Macbook"
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# NOT WORKING on Mac OS Monterey
+# sudo nvram SystemAudioVolume=%80 
 
 # Set highlight color to green
 # defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
