@@ -22,10 +22,9 @@ brew install node@14
 brew install docker
 brew install alfred
 brew install mackup
-# brew install dropbox
-# brew install google-backup-and-sync
+brew install dropbox
 brew install google-chrome #Chrome
-brew install google-drive
+# brew install google-drive
 # brew install homebrew/cask-versions/firefox-nightly # Nightly
 # brew install homebrew/cask-versions/google-chrome-canary # Chrome Canary
 brew install --cask firefox
