@@ -18,7 +18,7 @@ brew upgrade
 brew tap homebrew/cask
 
 ## Apps I use
-brew install node@14
+brew install node
 brew install docker
 brew install alfred
 brew install mackup
