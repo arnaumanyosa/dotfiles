@@ -54,6 +54,7 @@ brew install --cask veracrypt
 brew install --cask vlc
 brew install --cask appcleaner
 # brew install --cask freetube
+brew install --cask rectangle
 
 # Restore plists of apps
 mackup restore
