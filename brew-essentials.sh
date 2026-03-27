@@ -19,21 +19,22 @@ brew tap homebrew/cask
 
 ## Apps I use
 brew install node
-brew install docker
-brew install alfred
+brew install gh
+# brew install docker
+# brew install alfred
 brew install mackup
 brew install google-chrome #Chrome
 brew install --cask firefox
 brew install --cask brave-browser
-# brew install iterm2
 brew install kap
 # brew install slack
 brew install spotify
-brew install visual-studio-code
 brew install whatsapp
-# brew install zoom
+
+brew install visual-studio-code
+brew install --cask alltuner/tap/factoryfloor
+brew install --cask claude-code
 brew install --cask telegram
-# brew install --cask macs-fan-control
 brew install --cask deepl
 brew install --cask dupeguru
 brew install czkawka 
@@ -45,10 +46,9 @@ brew install --cask the-unarchiver
 brew install --cask veracrypt
 brew install --cask vlc
 brew install --cask appcleaner
-# brew install --cask freetube
 brew install --cask grayjay
 brew install --cask rectangle
-brew install --cask warp
+# brew install --cask warp
 brew install --cask topnotch
 brew install --cask commander-one
 
