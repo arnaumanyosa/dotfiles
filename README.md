@@ -69,9 +69,7 @@ Run the script that installs essential global packages
 
 ## Other interesting apps
 - Synology Drive Client
-- Unsplash Wallpaper
-- Bear
-- Sonos
+- Unsplash Wallpaper (app store)
 
 ## Inspired by
 - https://github.com/zellwk/dotfiles
