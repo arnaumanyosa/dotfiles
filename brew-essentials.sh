@@ -20,28 +20,28 @@ brew tap homebrew/cask
 ## Apps I use
 brew install node
 brew install gh
-# brew install docker
+brew install docker
 # brew install alfred
-brew install mackup
+# brew install mackup
 brew install google-chrome #Chrome
 brew install --cask firefox
 brew install --cask brave-browser
 brew install kap
-# brew install slack
+brew install slack
 brew install spotify
 brew install whatsapp
+brew install czkawka 
 
 brew install visual-studio-code
-brew install --cask alltuner/tap/factoryfloor
+# brew install --cask alltuner/tap/factoryfloor
 brew install --cask claude-code
 brew install --cask telegram
 brew install --cask deepl
 brew install --cask dupeguru
-brew install czkawka 
 brew install --cask handbrake
 brew install --cask figma
 brew install --cask postman
-brew install --cask microsoft-teams
+# brew install --cask microsoft-teams
 brew install --cask the-unarchiver
 brew install --cask veracrypt
 brew install --cask vlc
@@ -51,6 +51,18 @@ brew install --cask rectangle
 # brew install --cask warp
 brew install --cask topnotch
 brew install --cask commander-one
+brew install --cask lm-studio
+brew install --cask comfyui
+brew install --cask xnviewmp
+brew install --cask capcut
+
+brew install --cask proton-pass
+brew install --cask proton-mail
+brew install --cask proton-drive
+brew install --cask protonvpn
+
+brew tap tahseen-kakar/harbor
+brew install --cask harbor
 
 # Restore plists of apps
 mackup restore
