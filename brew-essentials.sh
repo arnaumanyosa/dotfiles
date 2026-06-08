@@ -19,6 +19,7 @@ brew tap homebrew/cask
 
 ## Apps I use
 brew install node
+brew install ffmpeg
 brew install gh
 brew install docker
 # brew install alfred
@@ -40,6 +41,9 @@ brew install --cask deepl
 brew install --cask dupeguru
 brew install --cask handbrake
 brew install --cask figma
+brew install --cask font-fira-code
+brew install --cask font-menlo-for-powerline
+brew install --cask obsidian
 brew install --cask postman
 # brew install --cask microsoft-teams
 brew install --cask the-unarchiver
