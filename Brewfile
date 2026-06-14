@@ -1,3 +1,4 @@
+#tap "tahseen-kakar/harbor"
 tap "tahseen-kakar/harbor"
 
 # Formulae
@@ -5,6 +6,7 @@ brew "czkawka"
 brew "ffmpeg"
 brew "gh"
 brew "node"
+brew "opencode"
 
 # Development
 cask "claude-code"
@@ -30,19 +32,19 @@ cask "grayjay"
 
 # AI & creative
 cask "capcut"
-cask "comfyui"
+# cask "comfyui"
 cask "lm-studio"
 
 # Utilities
 cask "appcleaner"
 cask "dupeguru"
-cask "handbrake"
+cask "handbrake-app"
 cask "kap"
 cask "macfuse"
 cask "the-unarchiver"
 cask "veracrypt"
 cask "xnviewmp"
-cask "harbor"
+# cask "harbor"
 cask "proton-drive"
 cask "proton-mail"
 cask "proton-pass"
@@ -56,16 +58,14 @@ cask "font-menlo-for-powerline"
 # MacOS-Specific Stuff
 
 # Mac OS Quick-Look Plugins
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'qlvideo'
-cask 'quicklook-json'
-cask 'webpquicklook',
+cask "qlmarkdown"
+cask "qlstephen"
+cask "quicklook-video"
+cask "webpquicklook"
 
 # Mac OS Mods and Improvements
-cask 'alt-tab'
-cask 'openinterminal'
-cask 'stats'
+cask "alt-tab"
+cask "openinterminal"
+cask "stats"
 cask "topnotch"
 cask "rectangle"
