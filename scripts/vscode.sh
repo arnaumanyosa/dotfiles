@@ -8,7 +8,7 @@ ln -sf "$DOTFILES_DIR/config/vscode/keybindings.json" "$VSCODE_DIR/keybindings.j
 
 if ! command -v code &>/dev/null; then
   echo "VS Code CLI not found, skipping extensions install."
-  return 0
+  exit 0
 fi
 
 echo "Installing VS Code extensions..."
