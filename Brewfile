@@ -1,5 +1,4 @@
 #tap "tahseen-kakar/harbor"
-tap "tahseen-kakar/harbor"
 
 # Formulae
 brew "czkawka"

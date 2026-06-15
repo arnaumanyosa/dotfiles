@@ -16,14 +16,11 @@ echo "==> Oh My Zsh"
 echo "==> npm globals"
 "$DOTFILES_DIR/scripts/npm.sh"
 
-# echo "==> macOS tweaks"
-# "$DOTFILES_DIR/scripts/macos.sh"
+echo "==> macOS tweaks"
+"$DOTFILES_DIR/scripts/macos.sh"
 
 echo "==> VS Code"
 "$DOTFILES_DIR/scripts/vscode.sh"
-
-echo "==> Quick Actions"
-"$DOTFILES_DIR/scripts/services.sh"
 
 echo ""
 echo "Setup complete."
