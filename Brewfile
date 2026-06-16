@@ -1,6 +1,5 @@
-#tap "tahseen-kakar/harbor"
-
 # Formulae
+brew "stats"
 brew "czkawka"
 brew "ffmpeg"
 brew "gh"
@@ -35,6 +34,7 @@ cask "capcut"
 cask "lm-studio"
 
 # Utilities
+cask "marta"
 cask "appcleaner"
 cask "dupeguru"
 cask "handbrake-app"
@@ -43,7 +43,6 @@ cask "macfuse"
 cask "the-unarchiver"
 cask "veracrypt"
 cask "xnviewmp"
-# cask "harbor"
 cask "proton-drive"
 cask "proton-mail"
 cask "proton-pass"
