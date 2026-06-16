@@ -1,76 +1,75 @@
 # Front-End Development Setup on a Mac
 
-The following workflow assumes a clean installation of macOS. While it's okay to have third-party software installed, the installation process will be more streamlined and less convoluted with a new macOS.
+Automated setup for a clean macOS installation. Installs all tools, apps, fonts, and applies system tweaks in one command.
 
-- [System update](#system-update)
-- [Xcode Command Line Tools](#xcode-command-line-tools)
-- [Rosetta](#rosetta)
-- [Clone this repo](#clone-this-repo)
-- [Oh my ZSH!](#oh-my-zsh)
-- [System Tweaks](#system-tweaks)
-- [Homebrew](#homebrew)
-- [NPM](#npm)
-- [Setup Mackup](#setup-mackup)
-- [Other interesting apps](#other-interesting-apps)
-- [Inspired by](#inspired-by)
+## Quick start
 
-## System update
+macOS doesn't ship with git. On a fresh machine, run any git command and macOS will prompt you to install Xcode Command Line Tools (which includes git). Once installed, proceed:
 
-Step One - Update the system!
-**Apple Icon > System Preferences > Software Updates**
+```bash
+git clone https://github.com/arnaumanyosa/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+chmod +x install.sh scripts/*.sh
+./install.sh
+```
 
-## Xcode Command Line Tools
+Then restart the computer to apply macOS tweaks.
 
-Using Terminal, install the Xcode Command Line Tools:
+## What it does
 
-    xcode-select --install
+1. **Xcode CLT** — installs Command Line Tools via `xcode-select --install`
+2. **Homebrew** — installs Homebrew (M1/Intel), then runs `brew bundle` from `Brewfile`
+3. **Oh My Zsh** — installs Oh My Zsh with `zsh-autosuggestions` and `zsh-syntax-highlighting`
+4. **npm globals** — installs `yarn`, `typescript`, `lighthouse`
+5. **macOS tweaks** — applies system defaults (Finder, Dock, keyboard, trackpad, etc.)
+6. **VS Code** — symlinks settings & keybindings, installs extensions from `extensions.txt`
+7. **Quick Actions** — symlinks `.workflow` files from `config/services/` to `~/Library/Services`
 
-## Rosetta
+## Rosetta (Apple Silicon)
 
-Some of the apps we will install need Rosetta to run with the M1 processor architecture
+Some apps require Rosetta. Install it separately if needed:
 
-    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```bash
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
 
-## Clone this repo
+## Repo structure
 
-Now that we have git installed, clone this repo to use all the scripts
+```
+dotfiles/
+├── Brewfile                  # all packages, casks, and fonts
+├── install.sh                # entry point
+├── scripts/
+│   ├── xcode.sh
+│   ├── homebrew.sh
+│   ├── zsh.sh
+│   ├── npm.sh
+│   ├── macos.sh
+│   └── vscode.sh
+└── config/
+    ├── vscode/
+    │   ├── settings.json
+    │   ├── keybindings.json
+    │   └── extensions.txt
+    └── services/
+        └── *.workflow
+```
 
-    git clone https://github.com/arnaumanyosa/dotfiles.git
+## Updating VS Code config
 
-## Oh my ZSH!
+After changing settings or installing extensions, snapshot the current state:
 
-Script to install Oh my ZSH!
+```bash
+cp "$HOME/Library/Application Support/Code/User/settings.json" config/vscode/settings.json
+cp "$HOME/Library/Application Support/Code/User/keybindings.json" config/vscode/keybindings.json
+code --list-extensions > config/vscode/extensions.txt
+```
 
-    ./install-zsh.sh
+## Other apps (manual install)
 
-## System Tweaks
-
-Apple's default system settings are limiting and don't show a lot of information. Let's change the settings for better usability around the system. Use the script created to run all of them easily:
-
-    ./macos-system-tweaks.sh
-
-Then restart the computer.
-
-## Homebrew
-
-Run a script that installs Homebrew and several formulaes (packages)
-
-    ./brew-essentials.sh
-
-## NPM
-
-Run the script that installs essential global packages
-
-    ./npm-essentials.sh
-
-## Setup Mackup
-
-    //TODO
-
-## Other interesting apps
-- Synology Drive Client
-- Unsplash Wallpaper (app store)
+- Unsplash Wallpaper (App Store)
 
 ## Inspired by
+
 - https://github.com/zellwk/dotfiles
 - https://github.com/asuh/front-end-macos

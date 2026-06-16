@@ -1,0 +1,10 @@
+anthropic.claude-code
+astro-build.astro-vscode
+bradlc.vscode-tailwindcss
+dbaeumer.vscode-eslint
+eamodio.gitlens
+esbenp.prettier-vscode
+file-icons.file-icons
+ms-vscode-remote.remote-containers
+sst-dev.opencode
+zhuangtongfa.material-theme

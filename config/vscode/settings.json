@@ -1,0 +1,43 @@
+{
+  "files.autoSave": "onWindowChange",
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "telemetry.enableTelemetry": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "debug.node.autoAttach": "on",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "One Dark Pro",
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontFamily": "Menlo, 'Victor Mono',Monaco, 'Courier New', monospace",
+  "vetur.experimental.templateInterpolationService": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "bracketPairColorizer.depreciation-notice": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "window.zoomLevel": -1,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.linkedEditing": true,
+  "claudeCode.preferredLocation": "panel"
+}
