@@ -1,5 +1,4 @@
 # Formulae
-brew "stats"
 brew "czkawka"
 brew "ffmpeg"
 brew "gh"
@@ -34,6 +33,7 @@ cask "capcut"
 cask "lm-studio"
 
 # Utilities
+cask "stats"
 cask "marta"
 cask "appcleaner"
 cask "dupeguru"
