@@ -23,7 +23,6 @@ Then restart the computer to apply macOS tweaks.
 4. **npm globals** — installs `yarn`, `typescript`, `lighthouse`
 5. **macOS tweaks** — applies system defaults (Finder, Dock, keyboard, trackpad, etc.)
 6. **VS Code** — symlinks settings & keybindings, installs extensions from `extensions.txt`
-7. **Quick Actions** — symlinks `.workflow` files from `config/services/` to `~/Library/Services`
 
 ## Rosetta (Apple Silicon)
 
@@ -48,11 +47,10 @@ dotfiles/
 │   └── vscode.sh
 └── config/
     ├── vscode/
-    │   ├── settings.json
-    │   ├── keybindings.json
-    │   └── extensions.txt
-    └── services/
-        └── *.workflow
+       ├── settings.json
+       ├── keybindings.json
+       └── extensions.txt
+  
 ```
 
 ## Updating VS Code config
